@@ -1,0 +1,14 @@
+[
+	{
+		"text": "薬院の美味しいイタリアン",
+		"intent": "GetRestaurantInformation",
+		"entities": 
+		[
+		{
+			"entity": "地名",
+			"startPos": 0,
+			"endPos": 2
+		}
+		]
+	}
+]
