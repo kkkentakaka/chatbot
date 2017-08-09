@@ -1,0 +1,189 @@
+/*json_luisの例/////////////////////////////////////////////////
+{
+             "query": "薬院の美味しいお店",
+  "topScoringIntent": {
+                       "intent": "GetRestaurantInformation",
+                       "score" : 0.9825375
+                      },
+           "intents": [
+                      {
+                       "intent": "GetRestaurantInformation",
+                       "score": 0.9825375
+                      },
+                      {
+                       "intent": "None",
+                       "score": 0.08362042
+                      }
+                      ],
+          "entities": [
+                      {
+                       "entity": "薬院",
+                       "type": "地名",
+                       "startIndex": 0,
+                       "endIndex": 1,
+                       "score": 0.9950811
+                      }
+                      ]
+}
+*///////////////////////////////////////////////////////////////
+/*//////////////////////////////////////////////////////////////
+天神
+AREAM5012
+親富孝
+AREAM5032
+大名
+AREAM5014
+赤坂
+AREAM5016
+今泉
+AREAM5022
+警固
+AREAM5024
+薬院
+AREAM5026
+平尾・清川
+AREAM5076
+大濠
+AREAM5034
+六本松
+AREAM5036
+桜坂・小笹
+AREAM5038
+博多
+AREAM5042
+博多
+AREAM5042
+博多
+AREAM5042
+中洲
+AREAM5052
+西中洲・春吉
+AREAM5054
+川端・祇園
+AREAM5062
+大橋
+AREAM5074
+高宮
+AREAM5072
+その他南区
+AREAM5086
+百道・藤崎
+AREAM5092
+ヤフードーム周辺
+AREAM5094
+西新
+AREAM5096
+その他早良区
+AREAM5098
+姪浜・小戸
+AREAM5102
+その他西区・糸島
+AREAM5106
+香椎
+AREAM5112
+箱崎
+AREAM5114
+その他東区
+AREAM5116
+別府
+AREAM5122
+その他城南区
+AREAM5124
+*///////////////////////////////////////////////////////////////
+
+
+
+
+if($json_object->entities->[0]->entity == '天神'){
+$area = AREAM5012;
+}
+if($json_object->entities->[0]->entity == '親富孝'){
+$area = AREAM5032;
+}
+if($json_object->entities->[0]->entity == '大名'){
+$area = AREAM5014;
+}
+if($json_object->entities->[0]->entity == '赤坂'){
+$area = AREAM5016;
+}
+if($json_object->entities->[0]->entity == '今泉'){
+$area = AREAM5022;
+}
+if($json_object->entities->[0]->entity == '警固'){
+$area = AREAM5024;
+}
+if($json_object->entities->[0]->entity == '薬院'){
+$area = AREAM5026;
+}
+if($json_object->entities->[0]->entity == '平尾・清川'){
+$area = AREAM5076;
+}
+if($json_object->entities->[0]->entity == '大濠'){
+$area = AREAM5034;
+}
+if($json_object->entities->[0]->entity == '六本松'){
+$area = AREAM5036;
+}
+if($json_object->entities->[0]->entity == '桜坂・小笹'){
+$area = AREAM5038;
+}
+if($json_object->entities->[0]->entity == '博多'){
+$area = AREAM5042;
+}
+if($json_object->entities->[0]->entity == '博多'){
+$area = AREAM5042;
+}
+if($json_object->entities->[0]->entity == '博多'){
+$area = AREAM5042;
+}
+if($json_object->entities->[0]->entity == '中洲'){
+$area = AREAM5052;
+}
+if($json_object->entities->[0]->entity == '西中洲・春吉'){
+$area = AREAM5054;
+}
+if($json_object->entities->[0]->entity == '川端・祇園'){
+$area = AREAM5062;
+}
+if($json_object->entities->[0]->entity == '大橋'){
+$area = AREAM5074;
+}
+if($json_object->entities->[0]->entity == '高宮'){
+$area = AREAM5072;
+}
+if($json_object->entities->[0]->entity == 'その他南区'){
+$area = AREAM5086;
+}
+if($json_object->entities->[0]->entity == '百道・藤崎'){
+$area = AREAM5092;
+}
+if($json_object->entities->[0]->entity == 'ヤフードーム周辺'){
+$area = AREAM5094;
+}
+if($json_object->entities->[0]->entity == '西新'){
+$area = AREAM5096;
+}
+if($json_object->entities->[0]->entity == 'その他早良区'){
+$area = AREAM5098;
+}
+if($json_object->entities->[0]->entity == '姪浜・小戸'){
+$area = AREAM5102;
+}
+if($json_object->entities->[0]->entity == 'その他西区・糸島'){
+$area = AREAM5106;
+}
+if($json_object->entities->[0]->entity == '香椎'){
+$area = AREAM5112;
+}
+if($json_object->entities->[0]->entity == '箱崎'){
+$area = AREAM5114;
+}
+if($json_object->entities->[0]->entity == 'その他東区'){
+$area = AREAM5116;
+}
+if($json_object->entities->[0]->entity == '別府'){
+$area = AREAM5122;
+}
+if($json_object->entities->[0]->entity == 'その他城南区'){
+$area = AREAM5124;
+}
